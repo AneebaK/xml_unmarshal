@@ -1,0 +1,36 @@
+<jxb:bindings version="3.0"
+              xmlns:jxb="https://jakarta.ee/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--    <jxb:globalBindings enableJavaNamingConventions="false">-->
+<!--        <jxb:javaType name="CodeAblageort" xmlType="Code.Ablageort" />-->
+<!--    </jxb:globalBindings>-->
+
+<!--<jxb:property name="Code.Ablageort">
+    <jxb:baseType name="CodeAblageort"><jxb:javaType name="CodeAblageort2" /></jxb:baseType>
+</jxb:property>-->
+
+    <jxb:bindings schemaLocation="https://xleitstelle.de/xbau/schema/kernmodul/1/1/xbau-kernmodul-codes.xsd">
+
+        <jxb:bindings node="//xs:complexType[@name='Code.Ablageort']">
+            <jxb:class name="CodeAblageort" />
+        </jxb:bindings>
+
+    </jxb:bindings>
+
+    <jxb:bindings schemaLocation="http://www.w3.org/1999/xlink.xsd" node="/xs:schema">
+
+        <jxb:bindings node="//xs:attributeGroup[@name='locatorAttrs']">
+            <jxb:bindings node=".//xs:attribute[@ref='xlink:title']">
+                <jxb:property name="title1"/>
+            </jxb:bindings>
+        </jxb:bindings>
+
+        <jxb:bindings node="//xs:attributeGroup[@name='arcAttrs']">
+            <jxb:bindings node=".//xs:attribute[@ref='xlink:title']">
+                <jxb:property name="title2"/>
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
+
+</jxb:bindings>
