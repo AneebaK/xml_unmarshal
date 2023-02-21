@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:beteiligte xmlns:ns2="http://www.xleitstelle.de/xbau/kernmodul/2/2">
+    <id>Bauvorhaben</id>
+    <name>
+        <titel>Prof</titel>
+        <anrede>Herr</anrede>
+        <familienname>
+            <name>Jhon</name>
+            <nichtVorhanden>true</nichtVorhanden>
+        </familienname>
+        <vorname>
+            <name>Snow</name>
+            <nichtVorhanden>false</nichtVorhanden>
+        </vorname>
+    </name>
+    <anschrift>
+        <strasse>strasseabv</strasse>
+        <hausnummer>12</hausnummer>
+        <postleitzahl>23456</postleitzahl>
+    </anschrift>
+    <istVertreter>false</istVertreter>
+</ns2:beteiligte>
